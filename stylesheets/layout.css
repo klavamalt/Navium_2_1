@@ -125,3 +125,24 @@
   width: 69px;
   height: 69px;
 }
+/* .busini {
+  margin-top: 1052px;
+} */
+.sprite-container {
+  height: 295px;
+  display: flex;
+  align-items: center;
+}
+.sprite-image {
+  height: 290px;
+  width: 508px;
+  background: url(../images/нить.svg) 0px 0px;
+  animation: play 2s steps(33) infinite;
+  position: absolute;
+  left: 0;
+}
+@keyframes play {
+  100% {
+    background-position-x: -16764px;
+  }
+}
