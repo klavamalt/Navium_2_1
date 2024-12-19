@@ -18,7 +18,7 @@
 .content-container {
   position: relative;
 
-  height: calc(100% - 129px);
+  height: calc(100% - 203px);
 }
 
 .content-container::before {
@@ -88,19 +88,19 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 27px;
+  gap: 2.2vw;
   user-select: none;
   overflow: hidden;
 
   /* height: 129px; */
-  padding: 29px 0 0;
+  padding: 2.35vw 0 0;
 }
 
 .infinite-line p {
   leading-trim: both;
   text-edge: cap;
   font-family: 'Bebas Neue';
-  font-size: 102px;
+  font-size: 8.28vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -109,7 +109,7 @@
 
 .infinite-line .items-container {
   display: flex;
-  gap: 27px;
+  gap: 2.2vw;
   flex-shrink: 0;
   min-width: 100%;
   animation: scrollAnimation 20s linear infinite;
@@ -121,9 +121,9 @@
 }
 
 .star {
-  margin-top: 5px;
-  width: 69px;
-  height: 69px;
+  margin-top: 0.4vw;
+  width: 5.6vw;
+  height: 9.5vh;
 }
 /* .busini {
   margin-top: 1052px;
@@ -174,52 +174,53 @@
   }
 
   to {
-    background-position-x: -17090px;
+    background-position-x: -1386.05vw;
   }
 }
 
 .wave {
-  height: 397px;
+  height: 54.68vh;
   width: 125%;
   /* background-size: cover; */
   background: url(../images/волна.png) repeat-x;
   position: absolute;
-  bottom: -250px;
-  left: -16px;
+  bottom: -20.28vw;
+  left: -1.3vw;
 
   animation: waveAnimation 100s linear infinite;
 }
 
 .wave-2 {
-  bottom: -270px;
+  bottom: -21.9vw;
   animation-duration: 30s;
 
   filter: brightness(110%);
 }
 .mayak-sloi {
   position: absolute;
-  left: 419px;
-  width: 100%;
-  height: 100%;
+  left: 10%;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+
+  width: 16.97vw;
+  height: calc(100% - 4.27vw);
   background: url('../images/маяк2.png') no-repeat;
+  background-size: contain;
 }
 .star-mayak {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 55px;
-  top: 141px;
+  width: 13.86vw;
+  height: 13.86vw;
+  left: 4.46vw;
+  top: 7.25vw;
   background: url('../images/star.svg') no-repeat;
+  background-size: contain;
   animation: blink 3s infinite;
 }
 .star-mayak-2 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 799px;
-  top: 141px;
-  background: url('../images/star.svg') no-repeat;
-  animation: blink 3s infinite;
+  left: unset;
+  right: 3.46vw;
 }
 @keyframes blink {
   from {
