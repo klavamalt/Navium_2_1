@@ -4,12 +4,6 @@
   margin: 0;
 }
 
-@keyframes animation {
-  to {
-    transform: scale(1.2) translateX(5%);
-  }
-}
-
 body {
   cursor: url('../images/cursor.png'), auto;
 }
@@ -75,15 +69,6 @@ body {
 
 .logo:hover {
   filter: invert(1);
-}
-
-@keyframes scrollAnimation {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-100% - 20px));
-  }
 }
 
 .infinite-line {
@@ -153,16 +138,6 @@ body {
   overflow: hidden;
 }
 
-@keyframes waveAnimation {
-  from {
-    background-position-x: 0;
-  }
-
-  to {
-    background-position-x: -1386.05vw;
-  }
-}
-
 .wave {
   height: 54.68vh;
   width: 125%;
@@ -210,14 +185,7 @@ body {
   left: unset;
   right: 3.46vw;
 }
-@keyframes blink {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
+
 .sun-section {
   height: 50vh;
   width: 100vw;
@@ -243,14 +211,6 @@ body {
   animation: spin 5s linear infinite;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .text {
   height: 50vh;
   width: 42vw;
@@ -268,8 +228,6 @@ body {
 }
 
 .third-section {
-  /* width: 100vw;
-  height: 100vh; */
   overflow: hidden;
 
   display: grid;
@@ -292,8 +250,6 @@ body {
   gap: 1.14vw;
   user-select: none;
   overflow: hidden;
-
-  /* height: 129px; */
 }
 
 .infinite-line-3 p {
@@ -314,24 +270,12 @@ body {
   margin-top: 20px;
 }
 
-@keyframes verticalScrollAnimation {
-  from {
-    transform: rotate(-90deg) translateX(0);
-  }
-  to {
-    transform: rotate(-90deg) translateX(calc(-100% - 20px));
-  }
-}
-
 .infinite-line-3 .items-container-3 {
   display: flex;
-  /* align-items: flex-start; */
   gap: 1.14vw;
-  /* z-index: 10; */
   flex-shrink: 0;
   min-width: 100%;
   width: 100vh;
-  /* transform-origin: left bottom; */
   animation: verticalScrollAnimation 20s linear infinite;
   animation-direction: reverse;
   transform: rotate(90deg);
@@ -384,30 +328,14 @@ body {
   overflow: hidden;
 }
 
-@keyframes change-color-1 {
-  to {
-    background: #000;
-  }
-}
-
 .pixel-1 {
   animation: change-color-1 2s ease-in-out infinite alternate;
 }
 
-@keyframes change-color-2 {
-  to {
-    background: #f5da24;
-  }
-}
 .pixel-2 {
   animation: change-color-2 2s ease-in-out infinite alternate;
 }
 
-@keyframes change-color-3 {
-  to {
-    background: #fff;
-  }
-}
 .pixel-3 {
   animation: change-color-3 2s ease-in-out infinite alternate;
 }
@@ -519,12 +447,6 @@ body {
   background-size: contain;
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
 .mark-ellipse::before {
   animation: fadeIn 1s ease-in-out infinite alternate;
   animation-delay: 0.7s;
@@ -612,71 +534,18 @@ body {
   left: -9.21vw;
 }
 
-@keyframes float-1 {
-  50% {
-    transform: translate(150px, 150px);
-  }
-  100% {
-    transform: translateY(220px, 300px);
-  }
-}
-@keyframes float-2 {
-  0%,
-  100% {
-    transform: translateY(0) translateX(0px);
-  }
-  33% {
-    transform: translateY(-60px) translateX(-200px);
-  }
-  66% {
-    transform: translateY(30px) translateX(100px);
-  }
-}
 .black-shape {
   animation: float-2 3s ease-in-out infinite;
 }
 
-@keyframes float-3 {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  33% {
-    transform: translate(-60px, -100px);
-  }
-  66% {
-    transform: translate(100px, 200px);
-  }
-}
 .yellow-star {
   animation: float-3 3s ease-in-out infinite;
 }
 
-@keyframes float-4 {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  33% {
-    transform: translate(-200px, -300px);
-  }
-  66% {
-    transform: translate(-100px, 200px);
-  }
-}
 .triangle {
   animation: float-4 3s ease-in-out infinite;
 }
 
-@keyframes float-5 {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(100px, 200px);
-  }
-}
 .polygon {
   animation: float-5 3s ease-in-out infinite;
 }
@@ -748,32 +617,6 @@ body {
   animation: opacity-1 5s linear infinite;
 }
 
-@keyframes opacity-1 {
-  12.5% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  62.5% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 .section-4 .chess .chess-row:nth-child(2) span:nth-child(1) {
   animation: opacity-2 5s linear infinite;
 }
@@ -785,33 +628,6 @@ body {
 }
 .section-4 .chess .chess-row:nth-child(10) span:nth-child(4) {
   animation: opacity-2 5s linear infinite;
-}
-
-@keyframes opacity-2 {
-  12.5% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  62.5% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 .section-4 .chess .chess-row:nth-child(2) span:nth-child(1) {
@@ -826,32 +642,6 @@ body {
 .section-4 .chess .chess-row:nth-child(10) span:nth-child(4) {
   animation: opacity-3 5s linear infinite;
 }
-@keyframes opacity-3 {
-  12.5% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  62.5% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 .section-4 .chess .chess-row:nth-child(3) span:nth-child(1) {
   animation: opacity-4 5s linear infinite;
@@ -864,32 +654,6 @@ body {
 }
 .section-4 .chess .chess-row:nth-child(14) span:nth-child(4) {
   animation: opacity-4 5s linear infinite;
-}
-@keyframes opacity-4 {
-  12.5% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  62.5% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 .section-4 .chess .chess-row:nth-child(3) span:nth-child(1) {
@@ -904,32 +668,6 @@ body {
 .section-4 .chess .chess-row:nth-child(14) span:nth-child(4) {
   animation: opacity-5 5s linear infinite;
 }
-@keyframes opacity-5 {
-  12.5% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  62.5% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 .section-4 .chess .chess-row:nth-child(5) span:nth-child(1) {
   animation: opacity-6 5s linear infinite;
@@ -942,32 +680,6 @@ body {
 }
 .section-4 .chess .chess-row:nth-child(14) span:nth-child(4) {
   animation: opacity-6 5s linear infinite;
-}
-@keyframes opacity-6 {
-  12.5% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  62.5% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 1;
-  }
-  87.5% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 .section-4 .chess .chess-row:nth-child(6) span:nth-child(1) {
@@ -982,32 +694,6 @@ body {
 .section-4 .chess .chess-row:nth-child(16) span:nth-child(4) {
   animation: opacity-7 5s linear infinite;
 }
-@keyframes opacity-7 {
-  12.5% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  62.5% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 .section-4 .chess .chess-row:nth-child(1) span:nth-child(1) {
   animation: opacity-8 5s linear infinite;
@@ -1021,32 +707,6 @@ body {
 .section-4 .chess .chess-row:nth-child(16) span:nth-child(4) {
   animation: opacity-8 5s linear infinite;
 }
-@keyframes opacity-8 {
-  12.5% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  62.5% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 .section-4 .chess .chess-row:nth-child(1) span:nth-child(1) {
   animation: opacity-8 5s linear infinite;
@@ -1059,29 +719,6 @@ body {
 }
 .section-4 .chess .chess-row:nth-child(16) span:nth-child(4) {
   animation: opacity-8 5s linear infinite;
-}
-@keyframes opacity-8 {
-  12.5% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  62.5% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 1;
-  }
 }
 
 .chess-row {
@@ -1097,528 +734,70 @@ body {
 .section-4 .chess .chess-row:nth-child(1) {
   animation: color-1 5s linear infinite;
 }
-@keyframes color-1 {
-  12.5% {
-    background: #f5da24;
-    /* color: #f5da24; */
-  }
-  25% {
-    background: #000000;
-    /* color: #000000; */
-  }
-  37.5% {
-    background: #000;
-    color: #0000;
-  }
-  50% {
-    background: #fff;
-  }
-  62.5% {
-    background: #f5da24;
-  }
-  75% {
-    background: #f5da24;
-  }
-  87.5% {
-    background: #f5da24;
-  }
-  100% {
-    background: #000;
-  }
-}
 
 .section-4 .chess .chess-row:nth-child(2) {
   animation: color-2 5s linear infinite;
-}
-@keyframes color-2 {
-  12.5% {
-    background: #000;
-    /* color: #000000; */
-  }
-  25% {
-    background: #f5da24;
-  }
-  37.5% {
-    background: #fff;
-    /* color: #fff; */
-  }
-  50% {
-    background: #000;
-  }
-  62.5% {
-    background: #000;
-  }
-  75% {
-    background: #fff;
-  }
-  87.5% {
-    background: #000;
-  }
-  100% {
-    background: #f5da24;
-  }
 }
 
 .section-4 .chess .chess-row:nth-child(3) {
   animation: color-3 5s linear infinite;
 }
-@keyframes color-3 {
-  12.5% {
-    background: #f5da24;
-  }
-  25% {
-    background: #000000;
-    /* color: #000000; */
-  }
-  37.5% {
-    background: #000;
-  }
-  50% {
-    background: #fff;
-  }
-  62.5% {
-    background: #f5da24;
-  }
-  75% {
-    background: #f5da24;
-  }
-  87.5% {
-    background: #fff;
-  }
-  100% {
-    background: #fff;
-  }
-}
 
 .section-4 .chess .chess-row:nth-child(4) {
   animation: color-4 5s linear infinite;
-}
-@keyframes color-4 {
-  12.5% {
-    background: #000;
-  }
-  25% {
-    background: #f5da24;
-    /* color: #f5da24; */
-  }
-  37.5% {
-    background: #fff;
-    color: #fff;
-  }
-  50% {
-    background: #000;
-  }
-  62.5% {
-    background: #000;
-  }
-  75% {
-    background: #fff;
-  }
-  87.5% {
-    background: #000;
-  }
-  100% {
-    background: #f5da24;
-  }
 }
 
 .section-4 .chess .chess-row:nth-child(5) {
   animation: color-5 5s linear infinite;
 }
-@keyframes color-5 {
-  12.5% {
-    background: #000;
-    color: #000;
-  }
-  25% {
-    background: #fff;
-  }
-  37.5% {
-    background: #f5da24;
-    /* color: #f5da24; */
-  }
-  50% {
-    background: #f5da24;
-  }
-  62.5% {
-    background: #fff;
-  }
-  75% {
-    background: #000;
-  }
-  87.5% {
-    background: #fff;
-  }
-  100% {
-    background: #fff;
-  }
-}
 
 .section-4 .chess .chess-row:nth-child(6) {
   animation: color-6 5s linear infinite;
-}
-@keyframes color-6 {
-  12.5% {
-    background: #f5da24;
-    /* color: #f5da24; */
-  }
-  25% {
-    background: #000000;
-    /* color: #000000; */
-  }
-  37.5% {
-    background: #000;
-  }
-  50% {
-    background: #fff;
-  }
-  62.5% {
-    background: #f5da24;
-  }
-  75% {
-    background: #f5da24;
-  }
-  87.5% {
-    background: #f5da24;
-  }
-  100% {
-    background: #000;
-  }
 }
 
 .section-4 .chess .chess-row:nth-child(7) {
   animation: color-7 5s linear infinite;
 }
-@keyframes color-7 {
-  12.5% {
-    background: #000;
-  }
-  25% {
-    background: #f5da24;
-  }
-  37.5% {
-    background: #fff;
-    /* color: #fff; */
-  }
-  50% {
-    background: #000;
-  }
-  62.5% {
-    background: #000;
-  }
-  75% {
-    background: #fff;
-  }
-  87.5% {
-    background: #000;
-  }
-  100% {
-    background: #f5da24;
-  }
-}
 
 .section-4 .chess .chess-row:nth-child(8) {
   animation: color-8 5s linear infinite;
-}
-@keyframes color-8 {
-  12.5% {
-    background: #fff;
-    /* color: #fff; */
-  }
-  25% {
-    background: #000000;
-    /* color: #000000; */
-  }
-  37.5% {
-    background: #000;
-    /* color: #000; */
-  }
-  50% {
-    background: #fff;
-  }
-  62.5% {
-    background: #f5da24;
-  }
-  75% {
-    background: #f5da24;
-  }
-  87.5% {
-    background: #f5da24;
-  }
-  100% {
-    background: #000;
-  }
 }
 
 .section-4 .chess .chess-row:nth-child(9) {
   animation: color-9 5s linear infinite;
 }
-@keyframes color-9 {
-  12.5% {
-    background: #fff;
-    /* color: #fff; */
-  }
-  25% {
-    background: #000000;
-    /* color: #000000; */
-  }
-  37.5% {
-    background: #000;
-    /* color: #000; */
-  }
-  50% {
-    background: #fff;
-  }
-  62.5% {
-    background: #f5da24;
-  }
-  75% {
-    background: #f5da24;
-  }
-  87.5% {
-    background: #f5da24;
-  }
-  100% {
-    background: #000;
-  }
-}
 
 .section-4 .chess .chess-row:nth-child(10) {
   animation: color-10 5s linear infinite;
-}
-@keyframes color-10 {
-  12.5% {
-    background: #000;
-  }
-  25% {
-    background: #f5da24;
-  }
-  37.5% {
-    background: #fff;
-    /* color: #fff; */
-  }
-  50% {
-    background: #000;
-  }
-  62.5% {
-    background: #000;
-  }
-  75% {
-    background: #fff;
-  }
-  87.5% {
-    background: #000;
-  }
-  100% {
-    background: #f5da24;
-  }
 }
 
 .section-4 .chess .chess-row:nth-child(11) {
   animation: color-11 5s linear infinite;
 }
-@keyframes color-11 {
-  12.5% {
-    background: #f5da24;
-    /* color: #f5da24; */
-  }
-  25% {
-    background: #000000;
-    /* color: #000000; */
-  }
-  37.5% {
-    background: #000;
-  }
-  50% {
-    background: #fff;
-  }
-  62.5% {
-    background: #f5da24;
-  }
-  75% {
-    background: #f5da24;
-  }
-  87.5% {
-    background: #f5da24;
-  }
-  100% {
-    background: #fff;
-  }
-}
 
 .section-4 .chess .chess-row:nth-child(12) {
   animation: color-12 5s linear infinite;
-}
-@keyframes color-12 {
-  12.5% {
-    background: #000;
-    /* color: #000; */
-  }
-  25% {
-    background: #fff;
-    /* color: #fff; */
-  }
-  37.5% {
-    background: #f5da24;
-    /* color: #f5da24; */
-  }
-  50% {
-    background: #f5da24;
-  }
-  62.5% {
-    background: #fff;
-  }
-  75% {
-    background: #000;
-  }
-  87.5% {
-    background: #fff;
-  }
-  100% {
-    background: #fff;
-  }
 }
 
 .section-4 .chess .chess-row:nth-child(13) {
   animation: color-13 5s linear infinite;
 }
-@keyframes color-13 {
-  12.5% {
-    background: #000;
-    /* color: #000; */
-  }
-  25% {
-    background: #f5da24;
-    /* color: #f5da24; */
-  }
-  37.5% {
-    background: #fff;
-    /* color: #fff; */
-  }
-  50% {
-    background: #000;
-  }
-  62.5% {
-    background: #000;
-  }
-  75% {
-    background: #fff;
-  }
-  87.5% {
-    background: #000;
-  }
-  100% {
-    background: #f5da24;
-  }
-}
 
 .section-4 .chess .chess-row:nth-child(14) {
   animation: color-14 5s linear infinite;
-}
-@keyframes color-14 {
-  12.5% {
-    background: #fff;
-    /* color: #fff; */
-  }
-  25% {
-    background: #000000;
-    /* color: #000000; */
-  }
-  37.5% {
-    background: #000;
-  }
-  50% {
-    background: #fff;
-  }
-  62.5% {
-    background: #f5da24;
-  }
-  75% {
-    background: #f5da24;
-  }
-  87.5% {
-    background: #f5da24;
-  }
-  100% {
-    background: #000;
-  }
 }
 
 .section-4 .chess .chess-row:nth-child(15) {
   animation: color-15 5s linear infinite;
 }
-@keyframes color-15 {
-  12.5% {
-    background: #000;
-    /* color: #000; */
-  }
-  25% {
-    background: #fff;
-    /* color: #fff; */
-  }
-  37.5% {
-    background: #f5da24;
-    /* color: #f5da24; */
-  }
-  50% {
-    background: #f5da24;
-  }
-  62.5% {
-    background: #fff;
-  }
-  75% {
-    background: #000;
-  }
-  87.5% {
-    background: #fff;
-  }
-  100% {
-    background: #fff;
-  }
-}
 
 .section-4 .chess .chess-row:nth-child(16) {
   animation: color-16 5s linear infinite;
-}
-@keyframes color-16 {
-  12.5% {
-    background: #000;
-    /* color: #000; */
-  }
-  25% {
-    background: #f5da24;
-    /* color: #f5da24; */
-  }
-  37.5% {
-    background: #fff;
-    /* color: #fff; */
-  }
-  50% {
-    background: #000;
-  }
-  62.5% {
-    background: #000;
-  }
-  75% {
-    background: #fff;
-  }
-  87.5% {
-    background: #000;
-  }
-  100% {
-    background: #f5da24;
-  }
 }
 
 .section-4 .man-container {
   background: #000;
   overflow: hidden;
-}
-
-@keyframes scaledScaleUp {
-  to {
-    transform: scale(1.25);
-  }
 }
 
 .section-4 .man-container img {
@@ -1649,12 +828,6 @@ body {
   background: #000;
 }
 
-@keyframes scaleUp {
-  to {
-    transform: scale(1.04);
-  }
-}
-
 .section-5 .content {
   overflow: hidden;
 
@@ -1675,22 +848,6 @@ body {
   overflow: hidden;
   position: relative;
   height: 100%;
-}
-
-@keyframes play {
-  100% {
-    background-position-x: -16764px;
-  }
-}
-
-@keyframes flick {
-  from {
-    background: #000;
-  }
-
-  to {
-    background: #f5da24;
-  }
 }
 
 .section-6 .flickering-block {
@@ -1728,17 +885,6 @@ body {
   background-size: contain;
 
   transform: rotate(var(--rotate));
-}
-
-@keyframes fall {
-  0% {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(var(--translateX), 380px);
-    opacity: 0;
-  }
 }
 
 .section-6 .stars-container .star.small {
