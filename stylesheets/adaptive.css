@@ -1,0 +1,375 @@
+
+@media (max-width: 1920px) {
+  @keyframes play {
+    to {
+      background-position-x: -23585px;
+    }
+  }
+
+  .sprite-image {
+    width: 713px;
+    height: 408px;
+
+    background: url(../images/sprites/sprite-1920.svg) 0px 0px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1366px) {
+  @keyframes play {
+    to {
+      background-position-x: -16764px;
+    }
+  }
+
+  .sprite-image {
+    width: 508px;
+    height: 290px;
+
+    background: url(../images/sprites/sprite-1366.svg) 0px 0px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1280px) {
+  @keyframes play {
+    to {
+      background-position-x: -15723px;
+    }
+  }
+
+  .sprite-image {
+    width: 476px;
+    height: 272px;
+
+    background: url(../images/sprites/sprite-1280.svg) 0px 0px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1024px) {
+  @keyframes play {
+    to {
+      background-position-x: -12602px;
+    }
+  }
+
+  .sprite-image {
+    width: 382px;
+    height: 218px;
+
+    background: url(../images/sprites/sprite-1024.svg) 0px 0px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes play {
+    to {
+      background-position-x: -25344px;
+    }
+  }
+
+  .sprite-image {
+    width: 768px;
+    height: 440px;
+
+    background: url(../images/sprites/sprite-768.svg) 0px 0px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 414px) {
+  @keyframes play {
+    to {
+      background-position-x: -19712px;
+    }
+  }
+
+  .sprite-image {
+    width: 597px;
+    height: 341px;
+
+    background: url(../images/sprites/sprite-414.svg) 0px 0px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 360px) {
+  @keyframes play {
+    to {
+      background-position-x: -17168px;
+    }
+  }
+
+  .sprite-image {
+    width: 520px;
+    height: 297px;
+
+    background: url(../images/sprites/sprite-360.svg) 0px 0px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .mayak-container {
+    background-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 65.94vw;
+    height: 53.38vw;
+  }
+
+  .wrapper {
+    align-items: flex-start;
+    justify-content: center;
+    background: url(../images/mobile/mark.png) no-repeat;
+    background-size: cover;
+
+    padding-top: 13vw;
+  }
+
+  .content-container {
+    height: calc(100% - 14.73vw);
+  }
+
+  .content-container::before {
+    background: url(../images/mobile/lines.svg), #000;
+    background-position: center top;
+    background-position: -5vw -4.9vw;
+  }
+
+  .second {
+    flex-direction: column;
+  }
+
+  .mayak {
+    height: unset;
+  }
+
+  .mayak-container {
+    width: 100%;
+    height: 93vw;
+
+    background-image: url('../images/mobile/маяк.png');
+  }
+
+  .mayak-sloi {
+    width: 25.84vw;
+
+    background-image: url('../images/mobile/маяк2.png');
+  }
+
+  .wave {
+    bottom: -10vw;
+    height: 10.68vh;
+  }
+
+  .wave-2 {
+    bottom: -7vw;
+  }
+
+  .star-mayak {
+    width: 24.15vw;
+    height: 24.15vw;
+
+    top: 13vw;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .text {
+    padding: 3.62vw 6.03vw;
+
+    width: 100%;
+    height: unset;
+
+  }
+
+  .second-section-text {
+    font-size: 15.71vw;
+    padding: 0;
+  }
+
+  .sun-section {
+    width: 100%;
+    height: 81.64vw;
+  }
+
+  .sun-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sun {
+    top: 0;
+    left: -14.07vw;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    height: 125.67vw;
+    width: 125.67vw;
+
+    background: url(../images/солнце.svg) no-repeat;
+    background-size: contain;
+  }
+
+  .white-shape {
+    width: 62.8vw;
+    height: 62.8vw;
+  }
+
+  .black-shape {
+    width: 110.86vw;
+    height: 110.86vw;
+  }
+
+  .yellow-star {
+    width: 98.79vw;
+    height: 98.79vw;
+  }
+
+  .triangle {
+    width: 91.06vw;
+    height: 94.4vw;
+  }
+
+  .polygon {
+    width: 66.42vw;
+    height: 66.42vw;
+  }
+
+  .third-section {
+    grid-template-columns: 1fr;
+  }
+
+  .figures-text-container {
+    grid-template-columns: 1fr;
+    height: unset;
+  }
+
+  .abstract-box {
+    height: 124.63vw;
+  }
+
+  .third-section .infinite-line-3 {
+    display: none;
+  }
+
+  .pixel-line {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+
+  .pixel-line > * {
+    width: unset;
+    height: 14.73vw;
+  }
+
+  .text-container {
+    padding: 17.63vw 11.11vw;
+    gap: 3.38vw;
+  }
+
+  .text-container .text-wrapper {
+    padding: 4.58vw 3.86vw;
+    font-size: 8.69vw;
+  }
+
+  .section-4 {
+    height: 103.38vw;
+
+    grid-template-columns: 1fr;
+  }
+
+  .section-4 .man-container {
+    display: none;
+  }
+
+  .chess-row {
+    font-size: 25.84vw;
+  }
+
+  .section-5 {
+    height: unset;
+    grid-template-columns: 1fr;
+  }
+
+  .section-5 .lines {
+    height: 14.73vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+  }
+
+  .section-5 .content {
+    height: 168.35vw;
+    width: 100%;
+  }
+
+  .section-5 .content .memories-image {
+    background: url(../images/mobile/memories.png), #000;
+    background-size: contain;
+  }
+
+  .section-6 {
+    grid-template-columns: 1fr;
+    height: unset;
+  }
+
+  .section-6 .flickering-block {
+    display: none;
+  }
+
+  .infinite-line:last-of-type {
+    height: 14.73vw;
+  }
+
+  .infinite-line:last-of-type p {
+    font-size: 11.58vw;
+  }
+
+  .infinite-line:last-of-type .star {
+    width: 7.97vw;
+    height: 7.97vw;
+  }
+
+  .section-6 .stars-container .star.small {
+    width: 22.7vw;
+    height: 22.7vw;
+    animation: fall 2s linear infinite;
+  }
+
+  .section-6 .stars-container .star.semi-medium {
+    width: 31.15vw;
+    height: 31.15vw;
+    animation: fall 2s linear infinite;
+  }
+
+  .section-6 .stars-container .star.medium {
+    width: 33.33vw;
+    height: 33.33vw;
+    animation: fall 2s linear infinite;
+  }
+
+  .section-6 .stars-container .star.big {
+    width: 35.74vw;
+    height: 35.74vw;
+    animation: fall 2s linear infinite;
+  }
+
+  .section-6 .stars-container {
+    height: 100.24vw;
+  }
+
+}
