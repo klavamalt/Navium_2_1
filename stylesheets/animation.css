@@ -778,11 +778,13 @@
     transform: scale(1.04);
   }
 }
+
 @keyframes play {
-  100% {
-    background-position-x: -16764px;
+  to {
+    background-position-x: var(--animation-bg-target-x);
   }
 }
+
 @keyframes flick {
   from {
     background: #000;
@@ -798,7 +800,7 @@
     opacity: 1;
   }
   100% {
-    transform: translate(var(--translateX), 380px);
+    transform: translate(var(--translate-x), 380px);
     opacity: 0;
   }
 }

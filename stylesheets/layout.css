@@ -83,7 +83,6 @@ body {
   user-select: none;
   overflow: hidden;
 
-  /* height: 129px; */
   padding: 1.35vw 0 0;
 }
 
@@ -103,8 +102,7 @@ body {
   gap: 2.2vw;
   flex-shrink: 0;
   min-width: 100%;
-  animation: scrollAnimation 20s linear infinite;
-  animation-direction: reverse;
+  animation: scrollAnimation 20s linear infinite reverse;
 }
 
 .infinite-line:hover .items-container {
@@ -132,7 +130,7 @@ body {
   width: 58vw;
   height: 100vh;
 
-  background: url('../images/маяк.svg') no-repeat;
+  background: url('../images/mayak-container.svg') no-repeat;
   background-size: cover;
 
   overflow: hidden;
@@ -141,8 +139,7 @@ body {
 .wave {
   height: 54.68vh;
   width: 125%;
-  /* background-size: cover; */
-  background: url(../images/волна.png) repeat-x;
+  background: url(../images/wave.png) repeat-x;
   position: absolute;
   bottom: -20.28vw;
   left: -1.3vw;
@@ -165,7 +162,7 @@ body {
 
   width: 16.97vw;
   height: calc(100% - 4.27vw);
-  background: url('../images/маяк2.png') no-repeat;
+  background: url('../images/mayak-layer.png') no-repeat;
   background-size: contain;
 }
 .star-mayak {
@@ -205,7 +202,7 @@ body {
 
   height: 60vw;
   width: 60vw;
-  background: url('../images/солнце.svg') no-repeat;
+  background: url('../images/sun.svg') no-repeat;
   background-size: contain;
   overflow: hidden;
   animation: spin 5s linear infinite;
@@ -264,10 +261,10 @@ body {
 }
 
 .infinite-line-3 img {
-  width: 69px;
-  height: 69px;
+  width: 3.59vw;
+  height: 3.59vw;
 
-  margin-top: 20px;
+  margin-top: 1.04vw;
 }
 
 .infinite-line-3 .items-container-3 {
@@ -276,11 +273,9 @@ body {
   flex-shrink: 0;
   min-width: 100%;
   width: 100vh;
-  animation: verticalScrollAnimation 20s linear infinite;
-  animation-direction: reverse;
-  transform: rotate(90deg);
+  animation: verticalScrollAnimation 20s linear infinite reverse;
 
-  margin-left: 80px;
+  margin-left: 4.1vw;
 }
 
 .infinite-line:hover .items-container-3 {
@@ -890,39 +885,35 @@ body {
 .section-6 .stars-container .star.small {
   width: 4.84vw;
   height: 4.84vw;
-  --translateX: -100px;
+  --translate-x: -100px;
   animation: fall 1.84s linear infinite;
 }
 
 .section-6 .stars-container .star.semi-medium {
   width: 7.13vw;
   height: 7.13vw;
-  --translateX: 50px;
+  --translate-x: 50px;
   animation: fall 3s linear infinite;
 }
 
 .section-6 .stars-container .star.medium {
   width: 7.6vw;
   height: 7.6vw;
-  --translateX: -200px;
+  --translate-x: -200px;
   animation: fall 3.5s linear infinite;
 }
 
 .section-6 .stars-container .star.big {
   width: 10.62vw;
   height: 10.62vw;
-  --translateX: -100px;
+  --translate-x: -100px;
   animation: fall 2.5s linear infinite;
-}
-
-.busini {
-  margin-top: 1052px;
 }
 
 .sprite-image {
   height: 100%;
   width: 100%;
-  background: url(../images/нить.svg) 0px 0px;
+  background: url(../images/thread-line.svg) 0px 0px;
   animation: play 2s steps(33) infinite;
 }
 
@@ -931,52 +922,6 @@ body {
   width: 100vw;
 
   overflow: hidden;
-}
-.infinite-line-7 {
-  background: #000;
-
-  width: 100%;
-
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 2.2vw;
-  user-select: none;
-  overflow: hidden;
-
-  /* height: 129px; */
-  padding: 1.35vw 0 0;
-}
-
-.infinite-line-7 p {
-  leading-trim: both;
-  text-edge: cap;
-  font-family: 'Bebas Neue';
-  font-size: 8.28vw;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  color: #fff;
-}
-
-.infinite-line-7 .items-container-7 {
-  display: flex;
-  gap: 2.2vw;
-  flex-shrink: 0;
-  min-width: 100%;
-  animation: scrollAnimation 20s linear infinite;
-  animation-direction: reverse;
-}
-
-.infinite-line:hover .items-container-7 {
-  animation-play-state: paused;
-}
-
-.star-7 {
-  background: url(../images/star-infinite-line.svg);
-  margin-top: 0.4vw;
-  width: 5.6vw;
-  height: 9.5vh;
 }
 
 .text-container .text-wrapper:hover {
